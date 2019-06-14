@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="TestSuite" thread-count="2" parallel="tests" >
+<suite name="EshopTestSuite" thread-count="3" parallel="tests" >
 
 <test name="ChromeTest">
 
@@ -9,7 +9,7 @@
 
 <classes>
 
-<class name="parallelTest.EshopHomeTest">
+<class name="test.EshopHomeTest">
 
 </class>
 
@@ -23,7 +23,7 @@
 
 <classes>
 
-<class name="parallelTest.EshopHomeTest">
+<class name="test.EshopHomeTest">
 
 </class>
 
@@ -37,7 +37,7 @@
 
 <classes>
 
-<class name="parallelTest.EshopHomeTest">
+<class name="test.EshopHomeTest">
 
 </class>
 

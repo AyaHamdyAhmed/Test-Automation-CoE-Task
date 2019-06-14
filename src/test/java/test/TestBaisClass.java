@@ -8,8 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 //import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-//import org.testng.annotations.BeforeTest;
+//import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 public class TestBaisClass {
@@ -22,13 +22,13 @@ String url = "https://www.vodafone.com.eg/eshop/homePage/index.jsp";
  * @param browser
  * @throws Exception
  */
-@BeforeSuite
+@BeforeTest
 @Parameters("browser")
 public void setup(String browser) throws Exception{
 	//Check if parameter passed from TestNG is 'firefox'
 	if(browser.equalsIgnoreCase("firefox")){
 	//create firefox instance
-		System.setProperty("webdriver.firefox.marionette", "src/test/resources/drivers/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver.exe");
 		driver = new FirefoxDriver();
 	}
 	//Check if parameter passed as 'chrome'
