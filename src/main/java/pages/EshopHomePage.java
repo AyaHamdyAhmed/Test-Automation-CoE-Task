@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +15,8 @@ public class EshopHomePage extends PageBaseClass {
 	@FindBy(id="search-q")
 	WebElement searchBox;
 	
-public void sendText(String text) {
-	
+public void searchQuery(String text) {
+ searchBox.sendKeys(text);
+ searchBox.sendKeys(Keys.ENTER);
 }
 }

@@ -14,6 +14,7 @@ import org.testng.annotations.Parameters;
 
 public class TestBaisClass {
 public static WebDriver driver;
+String url = "https://www.vodafone.com.eg/eshop/homePage/index.jsp";
 
 /**
  * This function will execute before each Test tag in testng.xml
@@ -49,6 +50,7 @@ public void setup(String browser) throws Exception{
 	}
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.navigate().to(url);
 }
 
 @AfterSuite
