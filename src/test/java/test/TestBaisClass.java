@@ -47,6 +47,7 @@ public void setup(String browser) throws Exception{
 		//If no browser passed throw exception
 		throw new Exception("Browser is not correct");
 	}
+	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 }
 
