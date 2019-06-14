@@ -12,5 +12,5 @@ public class PageBaseClass {
 	public PageBaseClass(WebDriver driver) {
 		this.driver= driver;
 		PageFactory.initElements(driver, this);
-	}
+	}	
 }

@@ -14,6 +14,7 @@ import org.testng.annotations.Parameters;
 
 public class TestBaisClass {
 public static WebDriver driver;
+///// should read it from excel sheet 
 String url = "https://www.vodafone.com.eg/eshop/homePage/index.jsp";
 
 /**

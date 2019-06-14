@@ -9,7 +9,7 @@
 
 <classes>
 
-<class name="parallelTest.TestBaisClass">
+<class name="parallelTest.EshopHomeTest">
 
 </class>
 
@@ -23,7 +23,7 @@
 
 <classes>
 
-<class name="parallelTest.TestBaisClass">
+<class name="parallelTest.EshopHomeTest">
 
 </class>
 
@@ -31,13 +31,13 @@
 
 </test>
 
-<test name="EdgeTest">
+<test name="IETest">
 
 <parameter name="browser" value="ie" />
 
 <classes>
 
-<class name="parallelTest.TestBaisClass">
+<class name="parallelTest.EshopHomeTest">
 
 </class>
 
